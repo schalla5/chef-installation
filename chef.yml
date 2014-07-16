@@ -8,6 +8,6 @@
     - name : download the deb
       command: wget https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/12.04/x86_64/chef-server_11.0.10-1.ubuntu.12.04_amd64.deb
     - name: download the installation package
-      command: sudo dpkg -i chef-server*
+      command: sudo dpkg -i chef-server
     - name: reconfigure the chef-server
       command: sudo chef-server-ctl reconfigure
