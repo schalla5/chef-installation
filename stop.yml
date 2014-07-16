@@ -1,0 +1,7 @@
+---
+- hosts: all
+  user: root
+  tasks:
+
+    - name: stop chef-server
+      service: name=chef state=stopped
