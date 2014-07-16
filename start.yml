@@ -1,7 +1,7 @@
 ---
 - hosts: all
   user: root
-    tasks:
+  tasks:
 
-        - name: start jenkins
-	      service: name=jenkins state=started
+    - name: start chef-server
+      service: name=chef state=started
